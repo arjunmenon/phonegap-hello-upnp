@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.pg.dev.upnp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>PG Dev Upnp</name>
+    <description>
+        Hello World sample application that responds to the deviceready event.
+    </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        PhoneGap Team
+    </author>
+    <hook src="resources/script/compile-less.js" type="before_prepare" />
+    <hook src="resources/script/before-test-runner.js" type="before_prepare" />
+    <hook src="resources/script/after-test-runner.js" type="after_prepare" />
+    <hook src="resources/script/copy-android-push-icon.js" type="before_build" />
+    <hook src="resources/script/add-version.js" type="before_build" />
+    <hook src="resources/script/remove-version.js" type="after_compile" />
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="StatusBarStyle" value="default" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+</widget>
